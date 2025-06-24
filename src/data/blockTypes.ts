@@ -1,0 +1,86 @@
+import { BlockType } from '../types/workflow';
+
+export const blockTypes: BlockType[] = [
+  {
+    id: 'agent',
+    name: 'Agent',
+    description: 'Build an agent',
+    icon: 'Bot',
+    category: 'AI',
+    color: 'bg-purple-500',
+  },
+  {
+    id: 'api',
+    name: 'API',
+    description: 'Use any API',
+    icon: 'Link',
+    category: 'Integration',
+    color: 'bg-blue-500',
+  },
+  {
+    id: 'condition',
+    name: 'Condition',
+    description: 'Add a condition',
+    icon: 'GitBranch',
+    category: 'Logic',
+    color: 'bg-orange-500',
+  },
+  {
+    id: 'function',
+    name: 'Function',
+    description: 'Run custom logic',
+    icon: 'Code',
+    category: 'Logic',
+    color: 'bg-red-500',
+  },
+  {
+    id: 'router',
+    name: 'Router',
+    description: 'Route workflow',
+    icon: 'Route',
+    category: 'Logic',
+    color: 'bg-green-500',
+  },
+  {
+    id: 'memory',
+    name: 'Memory',
+    description: 'Add memory store',
+    icon: 'Database',
+    category: 'Data',
+    color: 'bg-pink-500',
+  },
+  {
+    id: 'knowledge',
+    name: 'Knowledge',
+    description: 'Use vector search',
+    icon: 'Brain',
+    category: 'AI',
+    color: 'bg-teal-500',
+  },
+  {
+    id: 'workflow',
+    name: 'Workflow',
+    description: 'Execute another workflow',
+    icon: 'Workflow',
+    category: 'Control',
+    color: 'bg-amber-600',
+  },
+  {
+    id: 'response',
+    name: 'Response',
+    description: 'Send a structured response back to API calls only',
+    icon: 'Reply',
+    category: 'Output',
+    color: 'bg-blue-600',
+  },
+  {
+    id: 'loop',
+    name: 'Loop',
+    description: 'Iterate over items',
+    icon: 'RotateCw',
+    category: 'Control',
+    color: 'bg-indigo-500',
+  },
+];
+
+export const categories = Array.from(new Set(blockTypes.map(block => block.category)));
